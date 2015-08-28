@@ -1,0 +1,193 @@
+@import 'normalize.scss';
+
+/*
+Code above is from normalize.scss
+
+Code below is the main.scss code
+     BUT COMPILED!
+*/
+
+
+
+// designed for a small screen less than 29.875em wide
+
+body {
+     text-align: center;
+     background-color: #fff;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
+nav {
+     background-color: #fff;
+     padding: 0.5em 0;
+     margin-left: 0;
+
+     div {
+          margin: 0 1em;
+          display: inline-block;
+          padding: 0;
+     }
+
+     div:not(:first-child) {
+          &:hover,
+          &:focus {
+               background-color: #eee;
+          }
+     }
+}
+
+#your-logo {
+     color: #565D64;
+}
+
+#nav-pricing {
+     color: #0D0D0D;
+}
+
+.nav-text {
+     color: #777777;
+}
+
+header {
+     background-color: #ccc;
+     background-image: url("/images/background.jpg");
+     padding: 2.6em 3em;
+
+     h1 {
+          color: #fff;
+          font-weight: 400;
+     }
+}
+
+.price {
+
+     padding: 2em 0.5em;
+
+     .price-box {
+          margin: 1em 0 2em 0;
+     }
+
+     .price-header-free {
+          background-color: #519355;
+     }
+
+     .price-header-business {
+          background-color: #304882;
+     }
+
+     .price-header-enterprise {
+          background-color: #111111;
+     }
+
+     .pricing-list {
+          margin: 0 auto;
+          padding: 0.75em 0;
+          background-color: #F7F7F7;
+          color: #536066;
+          box-sizing: border-box;
+          border: 1px solid #e7e7e7;
+     }
+.button-box {
+     padding: 2.2em;
+     box-sizing: border-box;
+     border: 1px solid #e7e7e7;
+}
+     .button {
+          border: 1px solid #ccc;
+          color: #333333;
+          border-radius: 2em;
+          background-color: #fff;
+          font-weight: bold;
+          margin: 1.25em auto;
+          padding: 0.5em 1em;
+
+          &:hover,
+          &:focus {
+               background-color: #ddd;
+          }
+     }
+}
+
+.price-header-title {
+     color: #fff;
+     font-size: 1em;
+     font-weight: 400;
+     letter-spacing: 0.25em;
+     padding-top: 2em;
+     margin: 0 auto;
+}
+
+.price-dollars {
+     color: #fff;
+     font-size: 6em;
+     font-weight: 300;
+}
+
+.price-per-month {
+     color: #fff;
+     opacity: 0.5;
+     font-size: 1.2em;
+     padding-bottom: 2em;
+}
+
+.info-box {
+     text-align: left;
+     padding-top: 1em;
+
+     .feature-box {
+          padding: 2em 2em 1em 2em;
+     }
+
+     .feature-info {
+          color: #515D63;
+          line-height: 1.5em;
+     }
+}
+
+.feature-title {
+     letter-spacing: 0.25em;
+     color: #030303;
+     font-size: 1.2em;
+}
+
+footer {
+     background-color: #111;
+
+}
+
+.footer-box {
+     padding: 1em;
+     color: #878787;
+     p {
+          margin: 0 auto;
+
+          a {
+               color: #ddd;
+               text-decoration: underline;
+               line-height: 1.6;
+
+          }
+     }
+}
+
+// medium breakpoint
+@media screen and (min-width: 29.9375em) {
+     nav {
+
+          margin-left: 0;
+}
+
+
+// medium-large breakpoint
+@media screen and (min-width: 47.9375em)
+
+
+
+
+
+// large breakpoint
+@media screen and (min-width: 61.1875em)
