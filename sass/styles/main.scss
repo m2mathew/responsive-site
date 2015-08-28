@@ -174,20 +174,48 @@ footer {
      }
 }
 
+
 // medium breakpoint
 @media screen and (min-width: 29.9375em) {
      nav {
+          text-align: left;
+     }
 
-          margin-left: 0;
+
+header {
+     padding: 2.6em 3em;
+
+     h1 {
+          margin: 2.4em 0;
+          font-size: 2.75em;
+     }
+}
+
+.info-box {
+     .feature-box {
+          padding: 2em 2em 0.6em 2em;
+     }
+}
+
+.footer-box {
+          padding: 1.5em;
+     }
 }
 
 
 // medium-large breakpoint
-@media screen and (min-width: 47.9375em)
+@media screen and (min-width: 47.9375em) {
+
+
+}
 
 
 
 
 
 // large breakpoint
-@media screen and (min-width: 61.1875em)
+
+@media screen and (min-width: 61.1875em) {
+
+
+}
