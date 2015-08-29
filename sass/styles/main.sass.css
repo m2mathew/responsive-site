@@ -361,6 +361,10 @@ Code above is from normalize.scss
 Code below is the main.scss code
      BUT COMPILED!
 */
+/* designed for a small screen less than
+* 29.875em wide with added breakpoints as
+* the screen increases in size.
+*/
 body {
   text-align: center;
   background-color: #fff; }
@@ -393,7 +397,8 @@ nav {
 
 header {
   background-color: #ccc;
-  background-image: url("/images/background.jpg");
+  background: url("/images/background.jpg") 0 0 no-repeat fixed;
+  background-size: cover;
   padding: 2.6em 3em; }
   header h1 {
     color: #fff;
@@ -522,5 +527,7 @@ footer {
     text-align: center; }
     .info-box .feature-box {
       text-align: left;
-      width: 35%;
-      padding: 1em 2.5em 1em 1em; } }
+      width: 49%;
+      padding-right: 0; }
+    .info-box > p {
+      padding: 0; } }

@@ -9,8 +9,10 @@ Code below is the main.scss code
 
 
 
-// designed for a small screen less than 29.875em wide
-
+/* designed for a small screen less than
+* 29.875em wide with added breakpoints as
+* the screen increases in size.
+*/
 body {
     text-align: center;
     background-color: #fff;
@@ -55,7 +57,8 @@ nav {
 
 header {
     background-color: #ccc;
-    background-image: url("/images/background.jpg");
+    background: url("/images/background.jpg") 0 0 no-repeat fixed;
+    background-size: cover;
     padding: 2.6em 3em;
 
     h1 {
@@ -184,22 +187,24 @@ footer {
     }
 
 
-header {
-    padding: 2.6em 3em;
-    h1 {
-        margin: 2.4em 0;
-        font-size: 2.75em;
+    header {
+        padding: 2.6em 3em;
+
+        h1 {
+            margin: 2.4em 0;
+            font-size: 2.75em;
+        }
     }
-}
 
-.info-box {
 
-    .feature-box {
-        padding: 2em 2em 0.6em 2em;
+    .info-box {
+
+        .feature-box {
+            padding: 2em 2em 0.6em 2em;
+        }
     }
-}
 
-.footer-box {
+    .footer-box {
         padding: 1.5em;
     }
 }
@@ -207,6 +212,7 @@ header {
 
 // medium-large breakpoint
 @media screen and (min-width: 47.9375em) {
+
     .price {
         padding: 2em 0 2em 0;
 
@@ -263,8 +269,12 @@ header {
 
     .feature-box {
         text-align: left;
-        width: 35%;
-        padding: 1em 2.5em 1em 1em;
+        width: 49%;
+        padding-right: 0;
+        }
+
+        > p {
+            padding: 0;
         }
     }
 }
