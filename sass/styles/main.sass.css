@@ -371,15 +371,16 @@ a {
 
 nav {
   background-color: #fff;
-  padding: 0.5em 0;
   margin-left: 0; }
   nav div {
-    margin: 0 1em;
-    display: inline-block;
-    padding: 0; }
-  nav div:not(:first-child):hover,
-  nav div:not(:first-child):focus {
-    background-color: #eee; }
+    margin: 0.5em 1em;
+    display: inline-block; }
+  nav div:not(:first-child) {
+    padding: 0.5em 1em;
+    margin: 0; }
+    nav div:not(:first-child):hover,
+    nav div:not(:first-child):focus {
+      background-color: #eee; }
 
 #your-logo {
   color: #565D64; }
@@ -489,3 +490,20 @@ footer {
     padding: 2em 2em 0.6em 2em; }
   .footer-box {
     padding: 1.5em; } }
+
+@media screen and (min-width: 47.9375em) {
+  .price {
+    padding: 2em 0 0 0; }
+    .price .price-box {
+      display: inline-block;
+      padding: 0 0.4em 0 0.4em;
+      width: 30%; }
+  .info-box {
+    padding: 0; }
+    .info-box .feature-box {
+      display: inline-block;
+      width: 40%;
+      padding: 1em 2em;
+      vertical-align: top; }
+      .info-box .feature-box > div {
+        padding-top: 1em; } }

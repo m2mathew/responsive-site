@@ -23,16 +23,17 @@ a {
 
 nav {
      background-color: #fff;
-     padding: 0.5em 0;
      margin-left: 0;
 
      div {
-          margin: 0 1em;
+          margin: 0.5em 1em;
           display: inline-block;
-          padding: 0;
      }
 
      div:not(:first-child) {
+               padding: 0.5em 1em;
+               margin: 0;
+
           &:hover,
           &:focus {
                background-color: #eee;
@@ -205,12 +206,31 @@ header {
 
 // medium-large breakpoint
 @media screen and (min-width: 47.9375em) {
+     .price {
+          padding: 2em 0 0 0;
 
+          .price-box {
+               display: inline-block;
+               padding: 0 0.4em 0 0.4em;
+               width: 30%;
+          }
+     }
 
+     .info-box {
+          padding: 0;
+
+          .feature-box {
+               display: inline-block;
+               width: 40%;
+               padding: 1em 2em;
+               vertical-align: top;
+
+               > div {
+                    padding-top: 1em;
+               }
+          }
+     }
 }
-
-
-
 
 
 // large breakpoint
