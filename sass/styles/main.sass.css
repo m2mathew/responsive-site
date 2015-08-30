@@ -396,25 +396,25 @@ nav {
   color: #777777; }
 
 header {
-  background-color: #ccc;
+  padding: 2.6em 3em;
   background: url("/images/background.jpg") 0 0 no-repeat fixed;
-  background-size: cover;
-  padding: 2.6em 3em; }
+  background-color: #ccc;
+  background-size: cover; }
   header h1 {
     color: #fff;
     font-weight: 400; }
 
 .price {
   padding: 2em 0.5em; }
-  .price .price-box {
+  .price-box {
     margin: 1em 0 2em 0; }
-  .price .price-header-free {
+  .price-header-free {
     background-color: #519355; }
-  .price .price-header-business {
+  .price-header-business {
     background-color: #304882; }
-  .price .price-header-enterprise {
+  .price-header-enterprise {
     background-color: #111111; }
-  .price .pricing-list {
+  .price-list {
     margin: 0 auto;
     padding: 0.75em 0;
     background-color: #F7F7F7;
@@ -439,11 +439,11 @@ header {
 
 .price-header-title {
   color: #fff;
-  font-size: 1em;
-  font-weight: 400;
   letter-spacing: 0.25em;
   padding-top: 2em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 400; }
 
 .price-dollars {
   color: #fff;
@@ -499,7 +499,7 @@ footer {
 @media screen and (min-width: 47.9375em) {
   .price {
     padding: 2em 0 2em 0; }
-    .price .price-box {
+    .price-box {
       display: inline-block;
       padding: 0 0.4em 0 0.4em;
       width: 30%; }
@@ -521,7 +521,7 @@ footer {
   body section {
     max-width: 61.25em;
     margin: 0 auto; }
-  .price .price-box {
+  .price-box {
     max-width: 19.25em; }
   .info-box {
     text-align: center; }

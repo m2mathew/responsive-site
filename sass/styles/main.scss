@@ -56,10 +56,10 @@ nav {
 }
 
 header {
-    background-color: #ccc;
-    background: url("/images/background.jpg") 0 0 no-repeat fixed;
-    background-size: cover;
     padding: 2.6em 3em;
+    background: url("/images/background.jpg") 0 0 no-repeat fixed;
+    background-color: #ccc;
+    background-size: cover;
 
     h1 {
         color: #fff;
@@ -70,23 +70,23 @@ header {
 .price {
     padding: 2em 0.5em;
 
-    .price-box {
+    &-box {
         margin: 1em 0 2em 0;
     }
 
-    .price-header-free {
+    &-header-free {
         background-color: #519355;
     }
 
-    .price-header-business {
+    &-header-business {
         background-color: #304882;
     }
 
-    .price-header-enterprise {
+    &-header-enterprise {
         background-color: #111111;
     }
 
-    .pricing-list {
+    &-list {
         margin: 0 auto;
         padding: 0.75em 0;
         background-color: #F7F7F7;
@@ -118,18 +118,22 @@ header {
 }
 
 .price-header-title {
-    color: #fff;
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 0.25em;
-    padding-top: 2em;
-    margin: 0 auto;
+        color: #fff;
+        letter-spacing: 0.25em;
+        padding-top: 2em;
+        margin: 0 auto;
+            font: {
+                size: 1em;
+                weight: 400;
+            }
 }
 
-.price-dollars {
+&.price-dollars {
     color: #fff;
-    font-size: 6em;
-    font-weight: 300;
+    font: {
+        size: 6em;
+        weight: 300;
+    }
 }
 
 .price-per-month {
@@ -167,6 +171,7 @@ footer {
 .footer-box {
     padding: 1em;
     color: #878787;
+
     p {
         margin: 0 auto;
 
@@ -174,7 +179,6 @@ footer {
             color: #ddd;
             text-decoration: underline;
             line-height: 1.6;
-
         }
     }
 }
@@ -216,7 +220,7 @@ footer {
     .price {
         padding: 2em 0 2em 0;
 
-        .price-box {
+        &-box {
             display: inline-block;
             padding: 0 0.4em 0 0.4em;
             width: 30%;
@@ -258,7 +262,7 @@ footer {
 
     .price {
 
-        .price-box {
+        &-box {
 
             max-width: 19.25em;
         }
